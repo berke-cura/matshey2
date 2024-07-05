@@ -1,0 +1,82 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    padding: 20px 150px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+
+  }
+  
+  .buttonContainer {
+    list-style-type: none;
+    margin: 0;
+    border: 1px solid red;
+    padding: 15px 15px;
+    margin-left: 100px;
+  }
+  
+  .buttonContainer a {
+    padding: 15px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    
+  }
+  
+  .buttonContainer a:hover {
+    color: #ff3f00;
+  }
+  
+  .logoDiv {
+    border: 1px solid red;
+  }
+  
+  .logo {
+    height: auto;
+    max-width: auto;
+    width: 300px;
+    vertical-align: middle;
+  }
+  
+  .sistem {
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    background-color: #35a600;
+    font-weight: bold;
+    color: white !important;
+
+  }
+  
+  .sistem:hover {
+    background-color: #287a02;
+  }
+
+  .satin {
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    background-color: rgba(255, 63, 0, 1);
+    font-weight: bold;
+    color: white !important;
+
+  }
+  
+  .satin:hover {
+    background-color: #b22900;
+    color: white;
+  }
+  
+  .socials img{
+    padding: 0 5px;
+  }
+  .socials {
+    display: flex;
+
+  }
