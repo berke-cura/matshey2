@@ -79,7 +79,7 @@ const Navbar = () => {
   const handleScroll = (sectionId) => {
     if (typeof window !== 'undefined') {
       const section = document.getElementById(sectionId);
-      const navbarHeight = 50; // Adjust this value if your navbar height is different
+      const navbarHeight = 80; // Adjust this value if your navbar height is different
       if (section) {
         const targetPosition = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
         smoothScrollTo(targetPosition);
