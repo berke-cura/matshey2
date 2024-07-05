@@ -1,77 +1,50 @@
 .main {
   margin: 0;
   padding: 0;
-  
 }
 
-.description {
-
-}
-
-
-.description p {
-
-}
-
-
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: var(--max-width);
-  width: 100%;
-}
-
-
-.center {
+.section {
+  height: calc(100vh - 80px); /* Use the actual height of your navbar here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
 
 }
 
+.section1 {
+  background-color: #ffcccc;
+}
 
+.section2 {
+  background-color: #ccffcc;
+}
+
+.section3 {
+  background-color: #ccccff;
+}
+
+.section4 {
+  background-color: #ffffcc;
+}
 
 /* Mobile */
 @media (max-width: 700px) {
-  .content {
-  }
-
-  .grid {
- 
-  }
-
-  .center {
-  }
-
-  .description {
-  }
-
-  .description p,
-  .description div {
-
-  }
-
-  .description p {
-
-  }
-
-  .description div {
-
+  .section {
+    font-size: 18px;
   }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
+  .section {
+    font-size: 20px;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
+  .section {
+    color: white;
   }
 }

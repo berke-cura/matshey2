@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    height: calc(100vh - 80px); /* Use the actual height of your navbar here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+
+}
