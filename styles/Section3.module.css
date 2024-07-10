@@ -1,0 +1,67 @@
+.section {
+  background-color: #ccccff;
+  height: calc(150vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 3px;
+  padding: 20px;
+  text-align: center;
+  height: 35vh;
+  width: 20vw;
+  font-size: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1120px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+  .gridContainer {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    border: solid 1px red;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+  }
+  .card {
+    scroll-snap-align: start;
+    border: solid 1px blue;
+
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .section {
+    color: white;
+  }
+  .card {
+    background-color: #333;
+    color: white;
+  }
+}

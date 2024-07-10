@@ -28,29 +28,39 @@ const Navbar = () => {
       const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5,
+        threshold: Array.from(Array(101).keys(), (x) => x / 100),
       };
 
+      let sections = [];
       const handleIntersect = (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.id;
-            if (id === 'section1' || id === 'section2') {
-              setActiveSection('section1'); // Set to section1 to represent "ANASAYFA"
-            } else {
-              setActiveSection(id);
-            }
+          const id = entry.target.id;
+          const intersectionRatio = entry.intersectionRatio;
+
+          const sectionIndex = sections.findIndex(section => section.id === id);
+          if (sectionIndex !== -1) {
+            sections[sectionIndex].ratio = intersectionRatio;
+          } else {
+            sections.push({ id, ratio: intersectionRatio });
           }
         });
+
+        const mostVisibleSection = sections.reduce((prev, current) => {
+          return (prev.ratio > current.ratio) ? prev : current;
+        });
+
+        if (mostVisibleSection) {
+          setActiveSection(mostVisibleSection.id);
+        }
       };
 
       const observer = new IntersectionObserver(handleIntersect, options);
 
-      const sections = document.querySelectorAll('section');
-      sections.forEach((section) => observer.observe(section));
+      const sectionsToObserve = document.querySelectorAll('section');
+      sectionsToObserve.forEach((section) => observer.observe(section));
 
       return () => {
-        sections.forEach((section) => observer.unobserve(section));
+        sectionsToObserve.forEach((section) => observer.unobserve(section));
       };
     } else {
       setActiveSection('');

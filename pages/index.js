@@ -1,6 +1,10 @@
-// Home.js
 import Head from "next/head";
 import { Open_Sans } from "next/font/google";
+import Section1 from "@/components/section1";
+import Section2 from "@/components/section2";
+import Section3 from "@/components/section3";
+import Section4 from "@/components/section4";
+import Contact from "@/components/contact";
 import styles from "@/styles/Home.module.css";
 
 const openSans = Open_Sans({ subsets: ["latin"], weight: ["400", "700"] });
@@ -15,21 +19,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <main className={`${styles.main} ${openSans.className}`}>
-        <section id="section1" className={styles.section} style={{ backgroundColor: '#ffcccc' }}>
-          <p>Section 1</p>
-        </section>
-        <section id="section2" className={styles.section} style={{ backgroundColor: '#ccffcc' }}>
-          <p>Section 2</p>
-        </section>
-        <section id="section3" className={styles.section} style={{ backgroundColor: '#ccccff' }}>
-          <p>Section 3</p>
-        </section>
-        <section id="section4" className={styles.section} style={{ backgroundColor: '#ffffcc' }}>
-          <p>Section 4</p>
-        </section>
-        <section id="section5" className={styles.section} style={{ backgroundColor: '#ffffcc' }}>
-          <p>İletişim</p>
-        </section>
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
+        <Contact />
       </main>
     </>
   );
