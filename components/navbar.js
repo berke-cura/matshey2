@@ -97,17 +97,18 @@ const Navbar = () => {
     }
   };
 
-  const handleLinkClick = (e, sectionId) => {
+  const handleLinkClick = (e, sectionId, path) => {
     e.preventDefault();
     setIsMenuOpen(false); // Close menu on link click
-    if (router.pathname === '/') {
+    const targetPath = path ? path : '/';
+    if (router.pathname === targetPath) {
       if (sectionId) {
         handleScroll(sectionId);
       } else {
         smoothScrollTo(0); // Smoothly scroll to the top of the page
       }
     } else {
-      router.push(`/#${sectionId ? sectionId : ''}`).then(() => {
+      router.push(`${targetPath}#${sectionId ? sectionId : ''}`).then(() => {
         if (sectionId) {
           handleScroll(sectionId);
         } else {
@@ -161,8 +162,8 @@ const Navbar = () => {
         </Link>
         <a
           href="#"
-          onClick={(e) => handleLinkClick(e, 'contactForm')}
-          className={activeSection === 'contactForm' ? styles.active : ''}
+          onClick={(e) => handleLinkClick(e, 'section5', router.pathname)}
+          className={activeSection === 'section5' ? styles.active : ''}
         > İLETİŞİM</a>
         <Link className={styles.satin} href="/satn-al">
           SATIN AL

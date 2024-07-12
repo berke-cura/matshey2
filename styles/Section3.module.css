@@ -30,16 +30,14 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1024px) {
   .gridContainer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 700px) {
-  .gridContainer {
-    grid-template-columns: 1fr;
-  }
+
   .gridContainer {
     display: flex;
     overflow-x: scroll;
@@ -47,11 +45,18 @@
     border: solid 1px red;
     padding-top: 20px;
     padding-bottom: 30px;
+    justify-content: space-between;
 
   }
   .card {
-    scroll-snap-align: start;
+    scroll-snap-align:  center;
     border: solid 1px blue;
+    width: 75vw;
+    padding: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+
 
   }
 }

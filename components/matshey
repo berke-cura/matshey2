@@ -1,0 +1,44 @@
+matshey
+├── .eslintrc.json
+├── .gitignore
+├── README.md
+├── components
+│   ├── contact.js
+│   ├── footer.js
+│   ├── layout.js
+│   ├── navbar.js
+│   ├── section1.js
+│   ├── section2.js
+│   ├── section3.js
+│   └── section4.js
+├── jsconfig.json
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── pages
+│   ├── _app.js
+│   ├── _document.js
+│   ├── api
+│   │   └── hello.js
+│   ├── bayilik.js
+│   ├── index.js
+│   └── okullara-ozel.js
+├── public
+│   ├── favicon.png
+│   ├── instagram.png
+│   ├── linkedin.png
+│   ├── logo.png
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── youtube.png
+│   └── portfolio-2.jpg
+└── styles
+    ├── Contact.module.css
+    ├── Footer.module.css
+    ├── Home.module.css
+    ├── Navbar.module.css
+    ├── Section1.module.css
+    ├── Section2.module.css
+    ├── Section3.module.css
+    ├── Section4.module.css
+    └── globals.css

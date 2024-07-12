@@ -7,7 +7,7 @@
   padding: 10px 80px;
   background-color: white;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  font-size: 0.7rem;
+  font-size: 0.8vw;
   font-weight: 600;
   letter-spacing: 1px;
   height: 80px;
@@ -65,7 +65,7 @@ transition: all 300ms ease;
 .logo {
   height: auto;
   max-width: auto;
-  width: 300px;
+  width: 20vw;
   vertical-align: middle;
 }
 
@@ -194,15 +194,16 @@ transition: all 300ms ease;
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .buttonContainer a.active::after {
     display: none;
   }
   .nav {
     padding: 10px 20px;
+    font-size: 3vw;
   }
   .logo {
-    width: 150px;
+    width: 200px;
   }
   .buttonContainer {
     display: none;
@@ -237,6 +238,6 @@ transition: all 300ms ease;
 
 @media (max-width: 480px) {
   .logo {
-    width: 100px;
+    width: 150px;
   }
 }
