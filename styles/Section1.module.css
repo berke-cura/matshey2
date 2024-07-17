@@ -2,7 +2,7 @@
 .section {
   position: relative;
   background-color: #ffcccc;
-  height: calc(100vh - 130px);
+  height: 80vh;
   justify-content: center;
   align-items: center;
   font-size: 24px;

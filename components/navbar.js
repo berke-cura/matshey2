@@ -190,16 +190,18 @@ const Navbar = () => {
       </ul>
 
       <div className={`${styles.socials} ${isMenuOpen ? styles.hideSocials : ''}`}>
-        <Link href="https://www.instagram.com/mathseycom/" target="_blank">
-          <Image src="/instagram.png" alt="Instagram" width={30} height={30} />
-        </Link>
-        <Link href="https://www.youtube.com/channel/UCl1Oerk2QXHb0y91W10aIBQ" target="_blank">
-          <Image src="/youtube.png" alt="YouTube" width={45} height={30} />
-        </Link>
-        <Link href="https://www.linkedin.com/company/mathsey-matematik-robotu/" target="_blank">
-          <Image src="/linkedin.png" alt="LinkedIn" width={30} height={30} />
-        </Link>
-      </div>
+  <Link href="https://www.instagram.com/mathseycom/" target="_blank">
+    <Image src="/instagram.png" alt="Instagram" width={30} height={30} className={styles.icon} />
+  </Link>
+  <Link href="https://www.youtube.com/channel/UCl1Oerk2QXHb0y91W10aIBQ" target="_blank">
+    <Image src="/youtube.png" alt="YouTube" width={50} height={40} className={styles.icon} />
+  </Link>
+  <Link href="https://www.linkedin.com/company/mathsey-matematik-robotu/" target="_blank">
+    <Image src="/linkedin.png" alt="LinkedIn" width={30} height={30} className={styles.icon} />
+  </Link>
+</div>
+
+
     </nav>
   );
 };
