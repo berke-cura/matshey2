@@ -1,7 +1,8 @@
-/* Section styles remain unchanged */
+/* Section1.module.css */
+
 .section {
   position: relative;
-  background-color: #ffcccc;
+  background-color: #e72b058b;
   height: 80vh;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,6 @@
   flex-direction: column;
 }
 
-/* Card container and card styles remain unchanged */
 .cardContainer {
   display: flex;
   flex-direction: row;
@@ -22,15 +22,21 @@
 }
 
 .card {
-  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-shrink: 0;
+  flex-direction: row;
+  min-height: 100%;
 }
 
-/* Arrow button styles remain unchanged */
+.textBox, .videoBox {
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -52,7 +58,6 @@
   right: 0px;
 }
 
-/* Navigation button styles */
 .navButtons {
   position: absolute;
   bottom: 20px;
@@ -90,28 +95,48 @@
   z-index: 0;
 }
 
-
 .navButton.active::before {
   transform: scaleX(1);
-  transition: transform 5s linear;
-
+  transition: transform 10s linear;
 }
-
 
 .navButton.active {
   color: black;
 }
 
+.card1 .videoBox {
+  background-color: #ffaaaa;
+  width: 580px;
+  height: 360px;
+  padding:40px;
+}
+.card1 h2 {
+}
+.card2 .textBox {
+  background-color: #aaffaa;
+}
+.card3 .textBox {
+  background-color: #aaaaff;
+}
+
 @media (max-width: 700px) {
   .section {
     font-size: 18px;
+    height: 85vh;
+  }
+  
+  .card {
+    flex-direction: column;
+  }
+
+  .textBox, .videoBox {
+    width: 75%;
   }
 }
 
 @media (min-width: 701px) and (max-width: 1120px) {
   .section {
     font-size: 20px;
-
   }
 }
 

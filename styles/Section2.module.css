@@ -1,28 +1,102 @@
 .section {
-    background-color: #ccffcc;
-    height: calc(100vh - 80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.title span::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #e72b058b; /* Adjust color as needed */
+  margin: 15px auto 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1;
+  max-width: 400px;
+  margin: 20px;
+  text-align: left;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.feature h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 300;
+
+}
+
+.feature p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .title {
+    font-size: 28px;
   }
-  
-  @media (max-width: 700px) {
-    .section {
-      font-size: 18px;
-    }
+
+  .subtitle {
+    font-size: 16px;
   }
-  
-  @media (min-width: 701px) and (max-width: 1120px) {
-    .section {
-      font-size: 20px;
-    }
+
+  .feature {
+    margin: 20px 0;
+    text-align: center;
   }
-  
-  @media (prefers-color-scheme: dark) {
-    .section {
-      color: white;
-    }
+
+  .features {
+    flex-direction: column;
   }
-  
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .section {
+    color: white;
+  }
+
+  .subtitle, .feature p {
+    color: #ccc;
+  }
+}

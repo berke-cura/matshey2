@@ -1,0 +1,63 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+  }
+
+  .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+  }
+
+  .section3 {
+    background: url("../public/kurumsal-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    background-size: 100vw auto;
+    height: fit-content;
+    border: 1px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+  }
+
+.section3 .content {
+    display: flex;
+    flex-direction: row-reverse; /* Ensures the text is on the right */
+    margin-right: 400px;
+  }
+
+  .section3 .image{
+    align-self: center;
+    margin-right: 100px;
+  }
+  .text {
+    max-width: 600px;
+  }
+  
+  /* Mobile */
+  @media (max-width: 700px) {
+    .section {
+      font-size: 18px;
+    }
+  }
+  
+  /* Tablet and Smaller Desktop */
+  @media (min-width: 701px) and (max-width: 1120px) {
+    .section {
+      font-size: 20px;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .section {
+      color: white;
+    }
+  }
+  

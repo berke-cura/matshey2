@@ -1,7 +1,7 @@
 .scrollToTop {
     position: relative;
     z-index: 1000;
-    bottom: 50px;
+    bottom: 45px;
 }
 
 .arrowButton {
@@ -9,9 +9,9 @@
     color: black;
     border: none;
     border-radius: 20%;
-    padding: 10px;
     cursor: pointer;
-    font-size: 20px;
+    padding: 5px 10px 10px 10px  ;
+    font-size: 24px;
     font-weight: bolder;
     transition: background-color 0.3s ease;
     margin-bottom: -50px;

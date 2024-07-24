@@ -21,7 +21,7 @@ export default function Section3() {
   const cards = [
     {
       title: "Dijital Analiz",
-      image: "../egitimraporu.png",
+      image: "../yapayzeka.png",
       text: "Yapay zeka destekli dijital analiz ile öğrencinin matematik temelindeki eksikleri nokta atışı tespit edilir."
     },
     {
@@ -46,7 +46,7 @@ export default function Section3() {
     },
     {
       title: "Son Analiz",
-      image: "../yapayzeka.png",
+      image: "../ogrenme.png",
       text: "Video Eğitimlerini tamamlayan öğrencinin son durum değerlendirmesi için başta uygulanan analiz seviyesinde yapılan ölçümdür."
     },
     {
@@ -56,7 +56,7 @@ export default function Section3() {
     },
     {
       title: "Mentor Takibi",
-      image: "../ogrenme.png",
+      image: "../mentor.png",
       text: "Mathsey Mentorluk hizmeti, öğrenciye yol arkadaşlığı yapar. Öğrencinin başarıya ulaşması için takip eden mentor; maksimum fayda sağlaması için yönlendirmelerde bulunur."
     },
     {

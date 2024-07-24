@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     font-size: 14px;
     font-weight: bold;
     color: black;
@@ -11,7 +11,7 @@
 }
 
 .topSection {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .middleSection {
@@ -19,7 +19,7 @@
 }
 
 .bottomSection {
-    margin-top: 10px;
+    margin-top: -10px;
 }
 
 .links {
@@ -30,6 +30,7 @@
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .links li a {
@@ -64,3 +65,90 @@
         width: 200px;
     }
 }
+
+/* Add these styles to your Footer.module.css */
+
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    max-height: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+
+.closeButton {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 63, 0, 1);
+    color: white;
+    border: 3px solid black;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bolder;
+    z-index: 2000;
+}
+
+  
+.popupContent {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding-right: 10px; /* Prevent content from hiding behind the scrollbar */
+}
+  
+  @media (max-width: 768px) {
+    .popup {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .popup {
+      width: 95%;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

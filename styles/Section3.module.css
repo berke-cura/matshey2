@@ -47,7 +47,7 @@
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .cardImage {
@@ -96,6 +96,7 @@
   .card {
     scroll-snap-align: center;
     min-width: 60vw;
+    padding: 20px 10px 10px 10px;
   }
 
   .scrollButton {
@@ -134,4 +135,22 @@
 
 .gridContainer::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media (max-width: 390px) {
+  .cardsTitle {
+    position: absolute;
+    top: 7vh; /* Adjust as needed */
+  }
+  
+  .cardsText {
+    top: 27vh; /* Adjust as needed */
+    width: 70%;
+  }
+
+  .gridContainer {
+    padding-top: 55vh;
+  }
+
+
 }
