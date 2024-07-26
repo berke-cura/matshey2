@@ -36,7 +36,7 @@ const Footer = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [activePopup]);
+  }, [activePopup], [handleClickOutside]);
 
   return (
     <footer className={styles.footer} id="footer">

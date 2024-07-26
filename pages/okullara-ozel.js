@@ -39,9 +39,9 @@ export default function Home() {
         <div id="section3" className={styles.section3} style={{ backgroundColor: '#fff' }}>
           <div className={styles.content}>
             <div className={styles.text}>
-              <h1>Türkiye'de ilk ve tek!</h1>
+              <h1>Türkiye&apos;de ilk ve tek!</h1>
               <p>Öğrencilerinizin tüm temel matematik eksiklerini hızla ve eksiksiz kapatın!</p>
-              <p>Türkiye'nin 73 ilinde ve dünyada 7 ülkede, öğrenci ve velilerine %100'e yakın memnuniyetle hizmet veren Matematik Röntgeni'nin dijital ürünü olan Mathsey Matematik Robotu ile öğrencilerinizin tüm temel matematik eksiklerini hızla ve eksiksiz kapatın!</p>
+              <p>Türkiye&apos;nin 73 ilinde ve dünyada 7 ülkede, öğrenci ve velilerine %100&apos;e yakın memnuniyetle hizmet veren Matematik Röntgeni&apos;nin dijital ürünü olan Mathsey Matematik Robotu ile öğrencilerinizin tüm temel matematik eksiklerini hızla ve eksiksiz kapatın!</p>
             </div>
             <div className={styles.image}>
               <img src="/kurumsalK.png" alt="Student with books" />

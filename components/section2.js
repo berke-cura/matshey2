@@ -5,10 +5,10 @@ export default function Section2() {
     <section id="section2" className={styles.section}>
       <div className={styles.content}>
         <h2 className={styles.title}>
-          <span>'Mathsey Matematik Robotu' ile Kişiye Özel Temel Matematik Çözümleri</span>
+          <span>&apos;Mathsey Matematik Robotu&apos; ile Kişiye Özel Temel Matematik Çözümleri</span>
         </h2>
         <p className={styles.subtitle}>
-          Mathsey Matematik tu; Matematik Röntgeni tecrübesi ve yapay zeka yardımıyla öğrencinin matematik temelinin dijital analizini yapar, eksiklerine uygun video programı hazırlayan ve öğrenciye özel mentorla takibini yaparak başarıya ulaştıran “Kişiye Özel Matematik Çözümü”dür.
+          Mathsey Matematik Robotu; Matematik Röntgeni tecrübesi ve yapay zeka yardımıyla öğrencinin matematik temelinin dijital analizini yapar, eksiklerine uygun video programı hazırlayan ve öğrenciye özel mentorla takibini yaparak başarıya ulaştıran “Kişiye Özel Matematik Çözümü”dür.
         </p>
         <div className={styles.features}>
           <div className={styles.feature}>

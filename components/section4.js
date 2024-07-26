@@ -22,7 +22,7 @@ const cardData = [
 export default function Section4() {
   return (
     <section id="section4" className={styles.section}>
-      <h2 className={styles.title}>Mathsey'nin Matematikte Başarıya Taşıyan Ürünleri</h2>
+      <h2 className={styles.title}>Mathsey&apos;nin Matematikte Başarıya Taşıyan Ürünleri</h2>
       <div className={styles.cardContainer}>
         {cardData.map((card, index) => (
           <Card
