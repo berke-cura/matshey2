@@ -5,7 +5,13 @@
   align-items: center;
   position: relative;
   padding-top: 50px;
-  padding-bottom: 50px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.section:hover{
+  cursor: default;
 }
 
 .cardsTitle {
@@ -16,6 +22,7 @@
   z-index: 1;
   font-size: 26px;
   font-weight: bolder;
+  
 }
 
 .cardsText {
@@ -24,6 +31,7 @@
   width: 70%;
   text-align: center;
   z-index: 1;
+  
 }
 
 .gridContainer {

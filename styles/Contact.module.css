@@ -73,9 +73,11 @@
 @media (max-width: 768px) {
   .section {
   height: auto;
+  padding: 0;
   }
   .contactContainer {
     flex-direction: column;
+    width: 90vw;
   }
 }
 

@@ -1,0 +1,121 @@
+/* Bayi.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.main {
+  font-family: 'Roboto', sans-serif;
+}
+
+.section1, .section3, .section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  height: 100%;
+  padding: 20px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.section2 h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.section1 h1 {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
+.section3 p2{
+    font-weight: 100;
+    font-size: 16px;
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .section1{
+    margin-top: 15vh;
+    padding: 20px;
+  }
+
+  .section2 h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .section1 h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    margin: 15px 0;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+  .section3 p2{
+  width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section1, .section3, .section4 {
+    font-size: 18px;
+  }
+
+  .section2 h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .features {
+    width: 100%;
+  }
+
+  .feature {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+}

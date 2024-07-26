@@ -1,18 +1,52 @@
+.logo {
+  height: auto;
+  max-width: auto;
+  vertical-align: middle;
+  padding-top: 50px;
+}
+
+
 .section {
+  position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-
+  height: calc(40vh); 
   }
+
+  .section .content {
+   width: 60vw;
+   text-align: center;
+  }
+
+  .section p {
+    font-size: 3vh;
+    margin-bottom: 50px;
+  }
+
+
+
 
   .section2 {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    height: 100%; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
 
   }
+
+  .section2 .content{
+    width: 60vw;
+    text-align: center;
+
+  }
+
 
   .section3 {
     background: url("../public/kurumsal-bg.jpg");
@@ -20,17 +54,15 @@
     background-position: bottom; 
     background-size: 100vw auto;
     height: fit-content;
-    border: 1px solid black;
     padding-top: 30px;
     padding-bottom: 30px;
-
-
   }
 
 .section3 .content {
     display: flex;
     flex-direction: row-reverse; /* Ensures the text is on the right */
-    margin-right: 400px;
+    margin-right: 25vw;
+    
   }
 
   .section3 .image{
@@ -42,9 +74,23 @@
   }
   
   /* Mobile */
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     .section {
       font-size: 18px;
+      height: 100%; /* Use the actual height of your navbar here */
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+
+
+    .section3 .content{
+      flex-direction: column;
+      margin: 40px;
+    }
+
+    .section3 .image{
+      margin-right: 0;
     }
   }
   
@@ -52,6 +98,19 @@
   @media (min-width: 701px) and (max-width: 1120px) {
     .section {
       font-size: 20px;
+      height: 100%; /* Use the actual height of your navbar here */
+      padding-bottom: 50px;
+
+
+    }
+
+
+
+    .section3 .content{
+      margin-right: 10vw;
+      }
+    .section3 .image{
+    margin-right: 0;
     }
   }
   

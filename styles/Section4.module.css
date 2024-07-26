@@ -1,5 +1,5 @@
 .section {
-    background-color: #80808035;
+  background-color: #e72b058b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
     /* border: 1px solid black; */
   }
   
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     .section {
       font-size: 18px;
     }

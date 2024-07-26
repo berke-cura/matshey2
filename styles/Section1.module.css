@@ -31,10 +31,11 @@
   min-height: 100%;
 }
 
-.textBox, .videoBox {
+.textBox {
   width: 40%;
   padding: 10px;
   box-sizing: border-box;
+  padding-right: 50px;
 }
 
 .arrow {
@@ -104,19 +105,15 @@
   color: black;
 }
 
-.card1 .videoBox {
-  background-color: #ffaaaa;
-  width: 580px;
-  height: 360px;
-  padding:40px;
+.videoBox {
+width: 30vw;
+height: 17vw;
 }
 .card1 h2 {
 }
 .card2 .textBox {
-  background-color: #aaffaa;
 }
 .card3 .textBox {
-  background-color: #aaaaff;
 }
 
 @media (max-width: 700px) {
@@ -131,6 +128,12 @@
 
   .textBox, .videoBox {
     width: 75%;
+    padding-right: 0px;
+
+  }
+
+  .videoBox {
+    height: auto;
   }
 }
 
